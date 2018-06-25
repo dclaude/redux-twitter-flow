@@ -26,13 +26,11 @@ if (rootEl) {
   this allows to use <App> with a fake router in App.test.js
   */
   ReactDOM.render(
-    <React.StrictMode>
-      <Provider store={store}>
-        <Router>
-          <App />
-        </Router>
-      </Provider>
-    </React.StrictMode>,
+    <Provider store={store}>
+      <Router>
+        <App />
+      </Router>
+    </Provider>,
     rootEl)
 }
 else {
